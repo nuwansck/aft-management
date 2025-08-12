@@ -20,8 +20,6 @@ module "aft" {
   # Turn off AFT-managed networking
   aft_enable_vpc               = false
   aft_vpc_endpoints            = false
-  aft_enable_vpc_flow_logs     = false
-  aft_enable_lambda_vpc        = false
   aft_customer_vpc_id          = null
   aft_customer_private_subnets = null
 }
