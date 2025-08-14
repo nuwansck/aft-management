@@ -18,10 +18,8 @@ module "aft" {
   account_customizations_repo_name              = "${var.github_username}/learn-terraform-aft-account-customizations"
 
   # Turn off AFT-managed networking
-  aft_enable_vpc               = false
-  aft_vpc_endpoints            = false
-  aft_customer_vpc_id          = null
-  aft_customer_private_subnets = null
+  aft_enable_vpc                          = false
+  aft_feature_delete_default_vpcs_enabled = true
 
 # Retention period in days (0 = never expire)
   cloudwatch_log_group_retention = "30"
