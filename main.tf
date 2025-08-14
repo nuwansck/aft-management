@@ -22,6 +22,9 @@ module "aft" {
   aft_vpc_endpoints            = false
   aft_customer_vpc_id          = null
   aft_customer_private_subnets = null
+
+# Retention period in days (0 = never expire)
+  cloudwatch_log_group_retention = "30"
 }
 
 
